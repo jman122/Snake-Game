@@ -8,7 +8,7 @@ public class Frame extends JFrame{
 
 	public Frame() {
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // X button to close window
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
 		setTitle("Snake");
 		setResizable(false);
 		
@@ -17,14 +17,14 @@ public class Frame extends JFrame{
 	
 	public void init() {
 		
-		setLayout(new GridLayout(1, 1, 0, 0));           // Centers the window
+		setLayout(new GridLayout(1, 1, 0, 0));           
 		
 		Screen newScreen = new Screen();
 		add(newScreen);
 		
-		pack();                                          //Makes the window to the preferred size
+		pack();                                          
 		
-		setLocationRelativeTo(null);                     // Centers the frame on the middle of the screen
+		setLocationRelativeTo(null);                     
 		setVisible(true);
 		
 	}
